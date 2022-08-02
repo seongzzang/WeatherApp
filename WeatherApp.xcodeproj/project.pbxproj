@@ -14,6 +14,7 @@
 		69626C2C289965B000ECB5F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69626C2B289965B000ECB5F7 /* Assets.xcassets */; };
 		69626C2F289965B000ECB5F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69626C2D289965B000ECB5F7 /* LaunchScreen.storyboard */; };
 		69626C372899687700ECB5F7 /* WeatherInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69626C362899687700ECB5F7 /* WeatherInformation.swift */; };
+		69626C392899708100ECB5F7 /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69626C382899708100ECB5F7 /* ErrorMessage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		69626C2E289965B000ECB5F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		69626C30289965B000ECB5F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		69626C362899687700ECB5F7 /* WeatherInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInformation.swift; sourceTree = "<group>"; };
+		69626C382899708100ECB5F7 /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				69626C2D289965B000ECB5F7 /* LaunchScreen.storyboard */,
 				69626C30289965B000ECB5F7 /* Info.plist */,
 				69626C362899687700ECB5F7 /* WeatherInformation.swift */,
+				69626C382899708100ECB5F7 /* ErrorMessage.swift */,
 			);
 			path = WeatherApp;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 			files = (
 				69626C27289965AD00ECB5F7 /* ViewController.swift in Sources */,
 				69626C372899687700ECB5F7 /* WeatherInformation.swift in Sources */,
+				69626C392899708100ECB5F7 /* ErrorMessage.swift in Sources */,
 				69626C23289965AD00ECB5F7 /* AppDelegate.swift in Sources */,
 				69626C25289965AD00ECB5F7 /* SceneDelegate.swift in Sources */,
 			);
