@@ -79,18 +79,27 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eNF-Ax-ZBg">
+                                <rect key="frame" x="24" y="380.5" width="366" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="0zf-QQ-Cbp"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ntp-Fd-Xka" secondAttribute="trailing" constant="24" id="5tz-yp-TB6"/>
+                            <constraint firstItem="eNF-Ax-ZBg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="Bw9-KQ-hEC"/>
                             <constraint firstItem="Ntp-Fd-Xka" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="CXy-95-Gfa"/>
                             <constraint firstItem="jJL-4Y-GnF" firstAttribute="top" secondItem="Ntp-Fd-Xka" secondAttribute="bottom" constant="24" id="F0r-GU-ZyP"/>
                             <constraint firstItem="Ntp-Fd-Xka" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="Ie1-aP-rJu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eNF-Ax-ZBg" secondAttribute="trailing" constant="24" id="Zgi-an-poF"/>
                             <constraint firstItem="Bkm-Qs-HaP" firstAttribute="top" secondItem="jJL-4Y-GnF" secondAttribute="bottom" constant="50" id="bpk-al-Hi1"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Bkm-Qs-HaP" secondAttribute="trailing" constant="24" id="otx-l9-czP"/>
                             <constraint firstItem="Bkm-Qs-HaP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="pcm-dZ-Hhf"/>
                             <constraint firstItem="jJL-4Y-GnF" firstAttribute="centerX" secondItem="Ntp-Fd-Xka" secondAttribute="centerX" id="v68-Qh-fH5"/>
+                            <constraint firstItem="eNF-Ax-ZBg" firstAttribute="top" secondItem="Bkm-Qs-HaP" secondAttribute="bottom" constant="24" id="w7I-o3-nvu"/>
                         </constraints>
                     </view>
                     <connections>
