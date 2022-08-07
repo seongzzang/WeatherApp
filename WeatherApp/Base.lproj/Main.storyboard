@@ -105,6 +105,7 @@
                     <connections>
                         <outlet property="cityNameLabel" destination="y5Q-Ia-GjT" id="r5o-BC-Icm"/>
                         <outlet property="cityNameTextField" destination="Ntp-Fd-Xka" id="7dN-GR-9mB"/>
+                        <outlet property="imageView" destination="eNF-Ax-ZBg" id="wCr-pp-QvX"/>
                         <outlet property="maxTempLabel" destination="S1j-j7-wvg" id="b37-OY-hku"/>
                         <outlet property="minTempLabel" destination="ndY-un-uQU" id="bLa-NU-b5e"/>
                         <outlet property="tempLabel" destination="pQL-yW-V9h" id="GII-eI-4XB"/>

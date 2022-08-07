@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var maxTempLabel: UILabel!
     @IBOutlet weak var minTempLabel: UILabel!
     
+    @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var weatherStackView: UIStackView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +35,7 @@ class ViewController: UIViewController {
         self.cityNameLabel.text = weatherInformation.name
         if let weather = weatherInformation.weather.first {
             self.weatherDescriptionLabel.text = weather.description
+            self.setImageView(weatherInfo: weather.description)
         }
         self.tempLabel.text = "\(Int(weatherInformation.temp.temp - 273.15))℃"
         self.minTempLabel.text = "최저 : \(Int(weatherInformation.temp.minTemp - 273.15))℃"
@@ -67,6 +69,20 @@ class ViewController: UIViewController {
             }
            
         }.resume()
+    }
+    
+    func setImageView(weatherInfo: String){
+        if weatherInfo.contains("cloud"){
+            self.imageView.image = #imageLiteral(resourceName: "cloud")
+        } else if weatherInfo.contains("sun"){
+            self.imageView.image = #imageLiteral(resourceName: "sunny")
+        }else if weatherInfo.contains("rain"){
+            self.imageView.image = #imageLiteral(resourceName: "rainy")
+        }else if weatherInfo.contains("snow"){
+            self.imageView.image = #imageLiteral(resourceName: "snow")
+        } else {
+            self.imageView.image = #imageLiteral(resourceName: "rainbow")
+        }
     }
 }
 
