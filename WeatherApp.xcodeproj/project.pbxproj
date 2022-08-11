@@ -15,6 +15,7 @@
 		69626C2F289965B000ECB5F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69626C2D289965B000ECB5F7 /* LaunchScreen.storyboard */; };
 		69626C372899687700ECB5F7 /* WeatherInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69626C362899687700ECB5F7 /* WeatherInformation.swift */; };
 		69626C392899708100ECB5F7 /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69626C382899708100ECB5F7 /* ErrorMessage.swift */; };
+		6974326E28A5375B00DDC9B9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6974327028A5375B00DDC9B9 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,8 @@
 		69626C30289965B000ECB5F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		69626C362899687700ECB5F7 /* WeatherInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInformation.swift; sourceTree = "<group>"; };
 		69626C382899708100ECB5F7 /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
+		6974326F28A5375B00DDC9B9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		6974327128A5377E00DDC9B9 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +72,7 @@
 				69626C30289965B000ECB5F7 /* Info.plist */,
 				69626C362899687700ECB5F7 /* WeatherInformation.swift */,
 				69626C382899708100ECB5F7 /* ErrorMessage.swift */,
+				6974327028A5375B00DDC9B9 /* Localizable.strings */,
 			);
 			path = WeatherApp;
 			sourceTree = "<group>";
@@ -115,6 +119,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ko,
 			);
 			mainGroup = 69626C16289965AC00ECB5F7;
 			productRefGroup = 69626C20289965AD00ECB5F7 /* Products */;
@@ -132,6 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				69626C2F289965B000ECB5F7 /* LaunchScreen.storyboard in Resources */,
+				6974326E28A5375B00DDC9B9 /* Localizable.strings in Resources */,
 				69626C2C289965B000ECB5F7 /* Assets.xcassets in Resources */,
 				69626C2A289965AD00ECB5F7 /* Main.storyboard in Resources */,
 			);
@@ -171,6 +177,15 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		6974327028A5375B00DDC9B9 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6974326F28A5375B00DDC9B9 /* en */,
+				6974327128A5377E00DDC9B9 /* ko */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -178,6 +193,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -238,6 +254,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";

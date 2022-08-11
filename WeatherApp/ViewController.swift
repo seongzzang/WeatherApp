@@ -32,9 +32,9 @@ class ViewController: UIViewController {
     }
     
     func configureView(weatherInformation: WeatherInformation){
-        self.cityNameLabel.text = weatherInformation.name
+        self.cityNameLabel.text = weatherInformation.name.localized()
         if let weather = weatherInformation.weather.first {
-            self.weatherDescriptionLabel.text = weather.description
+            self.weatherDescriptionLabel.text = weather.description.localized()
             self.setImageView(weatherInfo: weather.description)
         }
         self.tempLabel.text = "\(Int(weatherInformation.temp.temp - 273.15))℃"
@@ -84,5 +84,14 @@ class ViewController: UIViewController {
             self.imageView.image = #imageLiteral(resourceName: "rainbow")
         }
     }
+}
+
+
+extension String {
+    
+    func localized(comment: String = "") -> String {
+        return NSLocalizedString(self, comment: comment)
+    }
+    
 }
 
